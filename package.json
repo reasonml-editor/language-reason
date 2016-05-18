@@ -1,7 +1,7 @@
 {
   "name": "language-reason",
   "main": "./lib/language-reason",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "If you're seeing this, don't hit the install button.",
   "keywords": [
   ],
