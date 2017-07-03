@@ -1,6 +1,6 @@
 {
   "name": "language-reason",
-  "repository": "https://github.com/chenglou/language-reason",
+  "repository": "https://github.com/reasonml-editor/language-reason",
   "private": true,
   "version": "0.0.3",
   "description": "Reason language support in Atom"
