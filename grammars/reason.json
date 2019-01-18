@@ -100,9 +100,9 @@
     "comment": {
       "name": "comment",
       "patterns": [
-        {	"include": "#comment-line"	},
+        { "include": "#comment-line" },
         { "include": "#comment-block-doc" },
-        {	"include": "#comment-block"	}
+        { "include": "#comment-block" }
       ]
     },
     "comment-line": {
