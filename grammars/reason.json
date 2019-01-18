@@ -100,8 +100,17 @@
     "comment": {
       "name": "comment",
       "patterns": [
+        {	"include": "#comment-line"	},
         { "include": "#comment-block-doc" },
         {	"include": "#comment-block"	}
+      ]
+    },
+    "comment-line": {
+      "begin": "(^[ \\t]+)?((//))",
+      "end": "(?=^)",
+      "name": "comment.line",
+      "patterns": [
+        { "include": "#comment" }
       ]
     },
     "comment-block": {
