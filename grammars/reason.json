@@ -98,7 +98,6 @@
       ]
     },
     "comment": {
-      "name": "comment",
       "patterns": [
         { "include": "#comment-line" },
         { "include": "#comment-block-doc" },
@@ -106,28 +105,35 @@
       ]
     },
     "comment-line": {
-      "begin": "(^[ \\t]+)?((//))",
-      "end": "(?=^)",
-      "name": "comment.line",
-      "patterns": [
-        { "include": "#comment" }
-      ]
+      "begin": "(^[ \\t]+)?(//)",
+      "end": "$",
+      "name": "comment.line.double-slash",
+      "beginCaptures": {
+        "1": { "name": "punctuation.whitespace.leading" },
+        "2": { "name": "punctuation.definition.comment" }
+      }
     },
     "comment-block": {
       "begin": "/\\*",
       "end": "\\*/",
       "name": "comment.block",
-      "patterns": [
-        { "include": "#comment" }
-      ]
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.begin" }
+      },
+      "endCaptures":   {
+        "0": { "name": "punctuation.definition.comment.end" }
+      }
     },
     "comment-block-doc": {
       "begin": "/\\*\\*(?!/)",
       "end": "\\*/",
       "name": "comment.block.documentation",
-      "patterns": [
-        { "include": "#comment" }
-      ]
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.begin" }
+      },
+      "endCaptures":   {
+        "0": { "name": "punctuation.definition.comment.end" }
+      }
     },
     "condition-lhs": {
       "begin": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])([\\?])(?![#\\-:!?.@*/&%^+<=>|~$\\\\])",
