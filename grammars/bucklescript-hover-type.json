@@ -1,0 +1,8 @@
+{
+  "scopeName": "source.bucklescript.hover.type",
+  "patterns": [
+    { "include": "source.bucklescript#signature-expression" },
+    { "include": "source.bucklescript#module-item-type" },
+    { "include": "source.bucklescript#type-expression" }
+  ]
+}
