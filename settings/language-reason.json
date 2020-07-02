@@ -5,7 +5,7 @@
       "foldEndPattern": "^\\s*\\}|^\\s*\\]|^\\s*\\)",
       "increaseIndentPattern": "(?x) \\{ [^}\"']* $ | \\[ [^\\]\"']* $ | \\( [^)\"']* $",
       "decreaseIndentPattern": "(?x) ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\])]",
-      "preferredLineLength": 80
+      "preferredLineLength": 110
     }
   },
   ".source.bucklescript": {
@@ -14,7 +14,7 @@
       "foldEndPattern": "^\\s*\\}|^\\s*\\]|^\\s*\\)",
       "increaseIndentPattern": "(?x) \\{ [^}\"']* $ | \\[ [^\\]\"']* $ | \\( [^)\"']* $",
       "decreaseIndentPattern": "(?x) ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\])]",
-      "preferredLineLength": 80
+      "preferredLineLength": 110
     }
   }
 }
