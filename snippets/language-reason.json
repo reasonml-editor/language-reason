@@ -36,31 +36,5 @@
       "prefix": "try",
       "body": "try (${1:expression}) {\n| ${2:firstException} => ${3:firstHandler}\n};"
     }
-  },
-  ".source.bucklescript": {
-    "BuckleScript: Type alias": {
-      "prefix": "ta",
-      "body": "type ${1:t} = ${2:typ}"
-    },
-    "BuckleScript: Let Binding": {
-      "prefix": "lb",
-      "body": "let ${1:name} = ${2:value}"
-    },
-    "BuckleScript: Let Function": {
-      "prefix": "lf",
-      "body": "let ${1:funcName} = (${2:args}) => {\n  $0\n}"
-    },
-    "BuckleScript: Module": {
-      "prefix": "mo",
-      "body": "module ${1:Module} = {\n  ${0}\n}"
-    },
-    "BuckleScript: Switch Pattern Match": {
-      "prefix": "sw",
-      "body": "switch ${1:expression} {\n| ${2:firstCase} => ${3:result}\n}"
-    },
-    "BuckleScript: Try-catch": {
-      "prefix": "try",
-      "body": "try ${1:expression} catch {\n| ${2:firstException} => ${3:firstHandler}\n}"
-    }
   }
 }
